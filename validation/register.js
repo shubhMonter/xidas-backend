@@ -37,7 +37,7 @@ module.exports = function validateRegisterInput(data) {
     errors.cemail = 'Email field is required';
   }else {
     if (!Validator.equals(data.email, data.cemail)) {
-      errors.cemail = 'Passwords must match';
+      errors.cemail = 'Email must match';
     }
   }
   if (Validator.isEmpty(data.password)) {
